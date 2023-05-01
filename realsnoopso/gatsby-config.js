@@ -9,15 +9,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "snoop",
+    title: "snoop.so",
     author: {
       name: "snoopso",
-      summary: "who lives and works in San Francisco building useful things.",
+      summary: "좋은 제품을 만들고 싶은 디자이너이자 개발자.",
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://snoop.so/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `realsnoopso`,
+      linkedin: `realsnoopso`,
     },
   },
   plugins: [

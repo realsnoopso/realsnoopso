@@ -44,11 +44,18 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          <strong>
+            <a
+              href={`https://www.linkedin.com/in/${social?.linkedin || ``}`}
+              target="_blank"
+            >
+              {author.name}
+            </a>
+          </strong>
+          의 개인 블로그.
+          <br></br>
+          {author?.summary || null}
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
         </p>
       )}
     </div>
