@@ -17,10 +17,10 @@ specifiers:
   gatsby-source-filesystem: ^5.9.0
   gatsby-transformer-remark: ^6.9.0
   gatsby-transformer-sharp: ^5.9.0
-  prettier: ^2.8.7
+  prettier: ^2.8.8
   prismjs: ^1.29.0
   react: ^18.2.0
-  react-dom: ^18.1.0
+  react-dom: ^18.2.0
   react-helmet: ^6.1.0
 
 dependencies:
