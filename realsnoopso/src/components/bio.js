@@ -20,6 +20,7 @@ const Bio = () => {
           }
           social {
             twitter
+            github
           }
         }
       }
@@ -44,18 +45,9 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          <strong>
-            <a
-              href={`https://www.linkedin.com/in/${social?.linkedin || ``}`}
-              target="_blank"
-            >
-              {author.name}
-            </a>
-          </strong>
-          의 개인 블로그.
-          <br></br>
-          {author?.summary || null}
-          {` `}
+          좋은 제품을 만들고 싶은 프로덕트 엔지니어.
+          <br />
+          현재는 프론트엔드 개발 공부를 하고 있습니다.
         </p>
       )}
     </div>

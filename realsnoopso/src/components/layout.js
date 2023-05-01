@@ -22,24 +22,11 @@ const Layout = ({ location, title, children }) => {
   }
 
   return (
-    <>
-      <Helmet>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1192556589507868"
-          crossorigin="anonymous"
-        ></script>
-      </Helmet>
-      <div className="global-wrapper" data-is-root-path={isRootPath}>
-        <header className="global-header">{header}</header>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
+    <div className="global-wrapper" data-is-root-path={isRootPath}>
+      <header className="global-header">{header}</header>
+      <main>{children}</main>
+      <footer></footer>
+    </div>
   )
 }
 

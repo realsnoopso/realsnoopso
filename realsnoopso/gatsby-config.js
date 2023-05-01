@@ -9,16 +9,18 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "snoop.so",
+    title: "snoote",
     author: {
       name: "snoopso",
-      summary: "좋은 제품을 만들고 싶은 디자이너이자 개발자.",
+      summary: `좋은 제품을 만들고 싶은 프로덕트 엔지니어 .
+현재는 프론트엔드 개발 공부에 집중하고 있습니다.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://snoop.so/`,
     social: {
       twitter: `realsnoopso`,
       linkedin: `realsnoopso`,
+      github: `realsnoopso`,
     },
   },
   plugins: [
@@ -122,12 +124,12 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-disqus`,
+      resolve: `gatsby-plugin-google-adsense`,
       options: {
-        shortname: `realsnoopso`,
+        publisherId: `ca-pub-1192556589507868`,
       },
     },
-    `gatsby-plugin-react-helmet`,
   ],
 }
