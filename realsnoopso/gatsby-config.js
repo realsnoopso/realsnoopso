@@ -9,13 +9,13 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `snoop`,
+    title: "snoop",
     author: {
-      name: `snoopso`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: "snoopso",
+      summary: "who lives and works in San Francisco building useful things.",
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://snoop.so/`,
     social: {
       twitter: `kylemathews`,
     },
@@ -119,6 +119,12 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `realsnoopso`,
       },
     },
   ],

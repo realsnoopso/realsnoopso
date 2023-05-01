@@ -4,12 +4,20 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { Disqus } from "gatsby-plugin-disqus"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
+  console.log({ site })
+
+  const disqusConfig = {
+    url: `${site.siteMetadata.siteUrl + location.pathname}`,
+    identifier: post.id,
+    title: site.siteMetadata?.title || `Title`,
+  }
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -29,6 +37,7 @@ const BlogPostTemplate = ({
         <hr />
         <footer>
           <Bio />
+          <Disqus config={disqusConfig} />
         </footer>
       </article>
       <nav className="blog-post-nav">
@@ -81,6 +90,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(id: { eq: $id }) {
