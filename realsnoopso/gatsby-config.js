@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: "snoote",
     author: {
-      name: "snoopso",
+      name: "소민경",
       summary: `좋은 제품을 만들고 싶은 프로덕트 엔지니어 .
 현재는 프론트엔드 개발 공부에 집중하고 있습니다.`,
     },

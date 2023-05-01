@@ -37,19 +37,22 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-picture.png"
-        width={50}
-        height={50}
+        src="../images/profile-pic.png"
+        width={85}
+        height={85}
         quality={95}
         alt="Profile picture"
       />
-      {author?.name && (
+      <div>
+        <p>
+          <strong>{author?.name}</strong>
+        </p>
         <p>
           좋은 제품을 만들고 싶은 프로덕트 엔지니어.
           <br />
           현재는 프론트엔드 개발 공부를 하고 있습니다.
         </p>
-      )}
+      </div>
     </div>
   )
 }
