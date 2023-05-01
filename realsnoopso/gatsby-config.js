@@ -128,5 +128,6 @@ module.exports = {
         shortname: `realsnoopso`,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }
