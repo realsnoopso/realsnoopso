@@ -1,6 +1,6 @@
 ---
 title: Duration Picker 컴포넌트 제작기
-date: 2023-05-27T00:00:32.169Z
+date: 2022-09-11T00:00:32.169Z
 description: Vanilla JS 기반 사내 라이브러리를 배포하고 Svelte와 통신하기
 ---
 
