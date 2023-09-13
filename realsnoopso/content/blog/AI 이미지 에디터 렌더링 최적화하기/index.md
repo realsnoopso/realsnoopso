@@ -66,11 +66,11 @@ key를 삭제하니 더이상 깜박임 현상이 일어나지 않았다. 게다
 ```jsx
 const onRenderCallback = (startTime: number, commitTime: number) => {
   console.log("-")
-  console.log("startTime:", startTime) // 실제로 걸린 시간
-  console.log("commitTime:", commitTime) // 실제로 걸린 시간
+  console.log("startTime:", startTime)
+  console.log("commitTime:", commitTime)
 }
 
-;<Profiler id="ImageHistoryContainer" onRender={onRenderCallback}>
+<Profiler id="ImageHistoryContainer" onRender={onRenderCallback}>
   ...
 </Profiler>
 ```
