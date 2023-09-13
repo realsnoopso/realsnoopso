@@ -21,10 +21,15 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <ol style={{ listStyle: `none`, paddingLeft: "var(--spacing-0)" }}>
-        {posts.map(post => {
+      <ol
+        style={{
+          listStyle: `none`,
+          paddingLeft: "var(--spacing-0)",
+          margin: 0,
+        }}
+      >
+        {posts.map((post, i) => {
           const title = post.frontmatter.title || post.fields.slug
-
           return (
             <li key={post.fields.slug}>
               <article
@@ -32,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <h2>
+                <h2 style={{ marginTop: i === 0 ? 0 : "auto" }}>
                   <Link to={post.fields.slug} itemProp="url">
                     <span itemProp="headline">{title}</span>
                   </Link>

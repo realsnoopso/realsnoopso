@@ -8,17 +8,44 @@ const Layout = ({ location, title, children }) => {
   let header
 
   header = (
-    <Link className="header-link-home" to="/">
-      {title}
-    </Link>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+      }}
+    >
+      <Link className="logo" to="/">
+        {title}
+      </Link>
+      <div
+        style={{
+          display: "flex",
+          gap: "var(--spacing-4)",
+        }}
+      >
+        <Link
+          className="header-link-home"
+          to="https://github.com/realsnoopso"
+          target="_blank"
+        >
+          github
+        </Link>
+        <Link className="header-link-home" to="/" target="_blank">
+          resume
+        </Link>
+      </div>
+    </div>
   )
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
+    <>
       <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer></footer>
-    </div>
+      <div className="global-wrapper" data-is-root-path={isRootPath}>
+        <main>{children}</main>
+        <footer></footer>
+      </div>
+    </>
   )
 }
 

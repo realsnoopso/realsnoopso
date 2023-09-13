@@ -120,7 +120,6 @@ h6 {
 }
 
 h1 {
-  font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
 }
 
@@ -176,24 +175,21 @@ ul,
 ol {
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
-  padding-left: var(--spacing-5);
+  padding-left: var(--spacing-3);
   margin-bottom: var(--spacing-8);
-  list-style-position: outside;
   list-style-image: none;
+  list-style-position: initial !important;
 }
 
 ul li,
 ol li {
   padding-left: var(--spacing-0);
   margin-bottom: calc(var(--spacing-5) / 2);
+  word-wrap: break-word;
 }
 
 li > p {
   margin-bottom: calc(var(--spacing-5) / 2);
-}
-
-li *:last-child {
-  margin-bottom: var(--spacing-0);
 }
 
 li > ul {
@@ -249,6 +245,7 @@ a:focus {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
   padding: var(--spacing-10) var(--spacing-5);
+  padding-top: var(--spacing-24);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -256,7 +253,11 @@ a:focus {
 }
 
 .global-header {
-  margin-bottom: var(--spacing-12);
+  position: fixed;
+  padding: var(--spacing-4) var(--spacing-6);
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1;
 }
 
 .main-heading {
@@ -265,8 +266,7 @@ a:focus {
 }
 
 .post-list-item {
-  margin-bottom: var(--spacing-8);
-  margin-top: var(--spacing-12);
+  margin-bottom: var(--spacing-12);
 }
 
 .post-list-item p {
@@ -276,7 +276,6 @@ a:focus {
 .post-list-item h2 {
   font-size: var(--fontSize-4);
   margin-bottom: var(--spacing-2);
-  margin-top: var(--spacing-0);
 }
 
 .post-list-item h2:hover {
@@ -288,6 +287,13 @@ a:focus {
 }
 
 .header-link-home {
+  font-weight: var(--fontWeight-bold);
+  font-family: var(--font-heading);
+  text-decoration: none;
+  font-size: var(--fontSize-1);
+}
+
+.logo {
   font-weight: var(--fontWeight-bold);
   font-family: var(--font-heading);
   text-decoration: none;
