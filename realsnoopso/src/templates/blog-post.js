@@ -12,18 +12,6 @@ const BlogPostTemplate = ({
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
 
-  React.useEffect(() => {
-    if (location.hash) {
-      // `hash`는 # 이후의 모든 문자를 포함합니다.
-      const id = location.hash.substring(1) // '#' 제거
-      console.log(id)
-      const element = document.getElementById(decodeURIComponent(id))
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" })
-      }
-    }
-  }, [location])
-
   return (
     <Layout location={location} title={siteTitle}>
       <article
@@ -31,9 +19,21 @@ const BlogPostTemplate = ({
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+        <header
+          style={{
+            marginBottom: "var(--spacing-6)",
+          }}
+        >
+          <h1 itemProp="headline" className="headline">
+            {post.frontmatter.title}
+          </h1>
+          <small
+            style={{
+              color: "var(--color-text-light)",
+            }}
+          >
+            {post.frontmatter.date}
+          </small>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}

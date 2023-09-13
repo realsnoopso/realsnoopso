@@ -50,18 +50,17 @@
   /* 1.200 Minor Third Type Scale */
   --fontSize-0: 0.833rem;
   --fontSize-1: 1rem;
-  --fontSize-2: 1.2rem;
-  --fontSize-3: 1.44rem;
-  --fontSize-4: 1.728rem;
-  --fontSize-5: 2.074rem;
-  --fontSize-6: 2.488rem;
-  --fontSize-7: 2.986rem;
+  --fontSize-2: 1.1rem;
+  --fontSize-3: 1.2rem;
+  --fontSize-4: 1.4rem;
+  --fontSize-5: 1.6rem;
+  --fontSize-6: 1.9rem;
+  --fontSize-7: 2.6rem;
   --color-primary: #ff8000;
-  --color-text: #2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
-  --color-accent: #d1dce5;
+  --color-text: #111;
+  --color-text-light: #666;
+  --color-heading: #343434;
+  --color-accent: #eee;
 }
 
 /* HTML elements */
@@ -110,6 +109,7 @@ h6 {
   letter-spacing: -0.025em;
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -122,7 +122,6 @@ h6 {
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
 }
 
 h2 {
@@ -168,8 +167,9 @@ p {
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-5) var(--spacing-0);
   padding: var(--spacing-0);
+  color: black;
 }
 
 ul,
@@ -185,11 +185,11 @@ ol {
 ul li,
 ol li {
   padding-left: var(--spacing-0);
-  margin-bottom: calc(var(--spacing-8) / 2);
+  margin-bottom: calc(var(--spacing-5) / 2);
 }
 
 li > p {
-  margin-bottom: calc(var(--spacing-8) / 2);
+  margin-bottom: calc(var(--spacing-5) / 2);
 }
 
 li *:last-child {
@@ -197,8 +197,8 @@ li *:last-child {
 }
 
 li > ul {
-  margin-left: var(--spacing-8);
-  margin-top: calc(var(--spacing-8) / 2);
+  margin-left: var(--spacing-5);
+  margin-top: calc(var(--spacing-5) / 2);
 }
 
 blockquote {
@@ -266,7 +266,7 @@ a:focus {
 
 .post-list-item {
   margin-bottom: var(--spacing-8);
-  margin-top: var(--spacing-8);
+  margin-top: var(--spacing-12);
 }
 
 .post-list-item p {
@@ -275,9 +275,12 @@ a:focus {
 
 .post-list-item h2 {
   font-size: var(--fontSize-4);
-  color: var(--color-primary);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
+}
+
+.post-list-item h2:hover {
+  color: var(--color-primary);
 }
 
 .post-list-item header {
@@ -335,4 +338,19 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+.headline {
+  font-size: var(--fontSize-7);
+  color: black;
+}
+
+pre[class*="language-"] code {
+  font-size: 0.85em;
+  text-shadow: none;
+  tab-size: 3;
+}
+
+pre code .token.operator {
+  background-color: transparent;
 }
