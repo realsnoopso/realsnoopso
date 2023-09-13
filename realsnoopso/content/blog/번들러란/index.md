@@ -1,7 +1,7 @@
 ---
 title: 번들러(Bundler)란?
 date: "2022-12-29T00:00:32.169Z"
-description: 번들러에 대해서 알아보자.
+description: 번들러에 대해서 알아보자
 ---
 
 ## 번들러가 대체 뭐지?

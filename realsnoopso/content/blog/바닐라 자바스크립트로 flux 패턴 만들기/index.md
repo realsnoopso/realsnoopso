@@ -1,7 +1,7 @@
 ---
 title: 바닐라 자바스크립트로 flux 패턴 만들기
 date: "2023-04-11T00:00:32.169Z"
-description: Redux를 뜯어보며 직접 flux 패턴 구현해보기.
+description: Redux를 뜯어보며 직접 flux 패턴 구현해보기
 ---
 
 ## Flux 패턴이란?

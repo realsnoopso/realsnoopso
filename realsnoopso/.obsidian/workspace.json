@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d60f1d0be3bd7199",
+        "id": "e0b8c1c82b72b8e1",
         "type": "tabs",
         "children": [
           {
-            "id": "9d9a4f1b265b7bbf",
+            "id": "350a654f503f09b8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,19 +138,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d9a4f1b265b7bbf",
+  "active": "350a654f503f09b8",
   "lastOpenFiles": [
-    "public/page-data/dev-404-page/page-data.json",
-    "public/page-data/dev-404-page",
-    "public/AI 이미지 에디터 렌더링 최적화하기/index.html",
-    "public/AI 이미지 에디터 렌더링 최적화하기",
-    "public/라이브러리를 만들고 배포해보자!/index.html",
-    "public/라이브러리를 만들고 배포해보자!",
-    "public/page-data/라이브러리를 만들고 배포해보자!/page-data.json",
-    "public/page-data/라이브러리를 만들고 배포해보자!",
-    "public/commons-34b9dbdf37ed675a7899.js.map",
-    "public/574-074c6d538373bde9f2a5.js.map",
-    "public/component---src-templates-blog-post-js-5ee62c0f6dad9b8852b1.js.map",
+    "public/page-data/번들러란/page-data.json",
+    "public/page-data/번들러란",
+    "public/page-data/\b코드스쿼드 CS과정 회고/page-data.json",
+    "public/page-data/\b코드스쿼드 CS과정 회고",
+    "public/static/e3dc0536961a2d1adab9acbc6f60ba81/8c76f/image01.png",
+    "public/static/e3dc0536961a2d1adab9acbc6f60ba81/8c76f",
+    "public/static/e3dc0536961a2d1adab9acbc6f60ba81",
+    "content/blog/Duration Picker 사내 라이브러리로 배포하기/assets/image01.png",
+    "public/page-data/Duration Picker 사내 라이브러리로 배포하기/page-data.json",
+    "public/page-data/Duration Picker 사내 라이브러리로 배포하기",
+    "content/blog/Duration Picker를 사내 라이브러리로 배포하기/index.md",
+    "content/blog/Duration Picker 사내 라이브러리로 배포하기/assets/Frame 131 1.png",
+    "content/blog/Duration Picker 사내 라이브러리로 배포하기/assets",
+    "content/blog/Duration Picker 사내 라이브러리로 배포하기/index.md",
+    "content/blog/Duration Picker 사내 라이브러리로 배포하기",
+    "content/blog/Duration Picker를 사내 라이브러리로 배포하기/assets/Frame 131 1.png",
+    "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
+    "content/blog/Duration Picker를 사내 라이브러리로 배포하기/assets",
+    "Frame 131 1.png.md",
     "src/images/profile-pic.png",
     "src/images/gatsby-icon.png",
     "src/images/Screenshot 2023-09-13 at 2.25.08 PM.png",
@@ -169,11 +169,6 @@
     "content/blog/바닐라 자바스크립트로 flux 패턴 만들기/index.md",
     "content/blog/번들러란/index.md",
     "content/blog/\b코드스쿼드 CS과정 회고/index.md",
-    "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
-    "public/icons/icon-48x48.png",
-    "src/assets/Screenshot 2023-08-29 at 12.25.24 PM.png",
-    "src/assets/Screen Recording 2023-08-29 at 2.06.02 PM.gif",
-    "src/assets/profile-pic.png",
     "Screenshot 2023-08-29 at 12.25.24 PM.png.md"
   ]
 }
