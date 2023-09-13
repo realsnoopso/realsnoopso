@@ -1,7 +1,7 @@
 ---
 title: 디바이스 너비 변경시 Dialog 위치 고정 버그
 date: 2022-10-02T00:00:32.169Z
-description: 디버깅 기록
+description: Svelte로 Dialog 만들기
 ---
 
 ![Screen Recording 2023-09-04 at 6 33 20 PM](https://user-images.githubusercontent.com/96381221/267786839-a1f50b9d-e6d3-49ca-886b-aef916e02a96.gif)
