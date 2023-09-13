@@ -148,19 +148,22 @@
   },
   "active": "9d9a4f1b265b7bbf",
   "lastOpenFiles": [
-    "public/page-data/AI 이미지 에디터 렌더링 최적화하기/page-data.json",
-    "public/page-data/AI 이미지 에디터 렌더링 최적화하기",
     "public/page-data/dev-404-page/page-data.json",
     "public/page-data/dev-404-page",
+    "public/AI 이미지 에디터 렌더링 최적화하기/index.html",
+    "public/AI 이미지 에디터 렌더링 최적화하기",
+    "public/라이브러리를 만들고 배포해보자!/index.html",
+    "public/라이브러리를 만들고 배포해보자!",
+    "public/page-data/라이브러리를 만들고 배포해보자!/page-data.json",
+    "public/page-data/라이브러리를 만들고 배포해보자!",
+    "public/commons-34b9dbdf37ed675a7899.js.map",
+    "public/574-074c6d538373bde9f2a5.js.map",
+    "public/component---src-templates-blog-post-js-5ee62c0f6dad9b8852b1.js.map",
     "src/images/profile-pic.png",
     "src/images/gatsby-icon.png",
     "src/images/Screenshot 2023-09-13 at 2.25.08 PM.png",
     "src/images/Screenshot 2023-08-29 at 12.25.24 PM.png",
-    "src/images/Screen Recording 2023-08-29 at 9.50.22 PM.mov",
     "src/images/Screen Recording 2023-08-29 at 2.06.02 PM.gif",
-    "src/images",
-    "pnpm-lock.yaml.1328512255",
-    "src/assets/Screen Recording 2023-08-29 at 9.50.22 PM.mov",
     "src/assets/Screenshot 2023-09-13 at 2.25.08 PM.png",
     "content/blog/라이브러리를 만들고 배포해보자!/index.md",
     "content/blog/바닐라 자바스크립트로 flux 패턴 만들기/index.md",
@@ -171,7 +174,6 @@
     "src/assets/Screenshot 2023-08-29 at 12.25.24 PM.png",
     "src/assets/Screen Recording 2023-08-29 at 2.06.02 PM.gif",
     "src/assets/profile-pic.png",
-    "Screenshot 2023-08-29 at 12.25.24 PM.png.md",
-    "content/blog/AI 이미지 에디터 렌더링 최적화하기"
+    "Screenshot 2023-08-29 at 12.25.24 PM.png.md"
   ]
 }

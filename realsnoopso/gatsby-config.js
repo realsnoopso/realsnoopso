@@ -24,6 +24,26 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+              plugins: [
+                {
+                  resolve: `gatsby-remark-copy-linked-files`,
+                  options: {
+                    destinationDir: `path/to/dir`,
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

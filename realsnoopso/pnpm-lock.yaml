@@ -50,6 +50,12 @@ dependencies:
   gatsby-react-router-scroll:
     specifier: ^6.9.0
     version: 6.9.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
+  gatsby-remark-copy-linked-files:
+    specifier: ^6.12.0
+    version: 6.12.0(gatsby@5.9.0)
+  gatsby-remark-gifs:
+    specifier: ^1.2.0
+    version: 1.2.0
   gatsby-remark-images:
     specifier: ^7.9.0
     version: 7.9.0(gatsby-plugin-sharp@5.9.0)(gatsby@5.9.0)
@@ -6015,6 +6021,32 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
+  /gatsby-remark-copy-linked-files@6.12.0(gatsby@5.9.0):
+    resolution: {integrity: sha512-QzD21eGL1hzSYr4XpLPbRealJreXCj4N7bicMYVyBE7vAVoROLj+29IpqCNLCq5oGwrihRkvf8Zqk/vymkTRhA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      gatsby: ^5.0.0-next
+    dependencies:
+      '@babel/runtime': 7.21.5
+      cheerio: 1.0.0-rc.12
+      fs-extra: 11.1.1
+      gatsby: 5.9.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+      is-relative-url: 3.0.0
+      lodash: 4.17.21
+      path-is-inside: 1.0.2
+      probe-image-size: 7.2.3
+      unist-util-visit: 2.0.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /gatsby-remark-gifs@1.2.0:
+    resolution: {integrity: sha512-i6V1RjhP+5E9wAUgJ7kWB/kVBj46VE8yVNo1+iBb1THhlZfDnSRsXf3DfrWrUYPAk1uQt5QBIRJl6ipZrZjFKA==}
+    dependencies:
+      is-relative-url: 3.0.0
+      unist-util-visit: 2.0.3
+    dev: false
+
   /gatsby-remark-images@7.9.0(gatsby-plugin-sharp@5.9.0)(gatsby@5.9.0):
     resolution: {integrity: sha512-sSQP5BUZ3UmgOuEtkyghYPqyKvgWG0QmP6Lpvnt0F2+bpj59crRfG2qDzRYFUbJ6JlQNLneitY76W/ynnRFsOg==}
     engines: {node: '>=18.0.0'}
@@ -8662,6 +8694,10 @@ packages:
   /path-is-absolute@1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
+
+  /path-is-inside@1.0.2:
+    resolution: {integrity: sha512-DUWJr3+ULp4zXmol/SZkFf3JGsS9/SIv+Y3Rt93/UjPpDpklB5f1er4O3POIbUuUJ3FXgqte2Q7SrU6zAqwk8w==}
+    dev: false
 
   /path-key@2.0.1:
     resolution: {integrity: sha512-fEHGKCSmUSDPv4uoj8AlD+joPlq3peND+HRYyxFz4KPw4z926S/b8rIuFs2FYJg3BwsxJf6A9/3eIdLaYC+9Dw==}

@@ -23,6 +23,8 @@
     "gatsby-plugin-react-helmet": "^6.9.0",
     "gatsby-plugin-sharp": "^5.9.0",
     "gatsby-react-router-scroll": "^6.9.0",
+    "gatsby-remark-copy-linked-files": "^6.12.0",
+    "gatsby-remark-gifs": "^1.2.0",
     "gatsby-remark-images": "^7.9.0",
     "gatsby-remark-prismjs": "^7.9.0",
     "gatsby-remark-responsive-iframe": "^6.9.0",
