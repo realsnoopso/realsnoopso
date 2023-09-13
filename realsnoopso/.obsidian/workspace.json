@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "b617cd96b29c5d1c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d60f1d0be3bd7199",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d9a4f1b265b7bbf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d3d834137050165a",
+    "type": "split",
+    "children": [
+      {
+        "id": "abbed29ad237aa11",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a457bee13b69b94",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "413c74ee7bd46ed3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2ff59b44c9240d75",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ca5b8640959a1724",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc948f915d2f6fc2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99e59c1803ec9af3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bbad3f6937db0e17",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7050910c64123db0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "66bba3bc6f781778",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9d9a4f1b265b7bbf",
+  "lastOpenFiles": [
+    "public/page-data/AI 이미지 에디터 렌더링 최적화하기/page-data.json",
+    "public/page-data/AI 이미지 에디터 렌더링 최적화하기",
+    "public/page-data/dev-404-page/page-data.json",
+    "public/page-data/dev-404-page",
+    "src/images/profile-pic.png",
+    "src/images/gatsby-icon.png",
+    "src/images/Screenshot 2023-09-13 at 2.25.08 PM.png",
+    "src/images/Screenshot 2023-08-29 at 12.25.24 PM.png",
+    "src/images/Screen Recording 2023-08-29 at 9.50.22 PM.mov",
+    "src/images/Screen Recording 2023-08-29 at 2.06.02 PM.gif",
+    "src/images",
+    "pnpm-lock.yaml.1328512255",
+    "src/assets/Screen Recording 2023-08-29 at 9.50.22 PM.mov",
+    "src/assets/Screenshot 2023-09-13 at 2.25.08 PM.png",
+    "content/blog/라이브러리를 만들고 배포해보자!/index.md",
+    "content/blog/바닐라 자바스크립트로 flux 패턴 만들기/index.md",
+    "content/blog/번들러란/index.md",
+    "content/blog/\b코드스쿼드 CS과정 회고/index.md",
+    "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
+    "public/icons/icon-48x48.png",
+    "src/assets/Screenshot 2023-08-29 at 12.25.24 PM.png",
+    "src/assets/Screen Recording 2023-08-29 at 2.06.02 PM.gif",
+    "src/assets/profile-pic.png",
+    "Screenshot 2023-08-29 at 12.25.24 PM.png.md",
+    "content/blog/AI 이미지 에디터 렌더링 최적화하기"
+  ]
+}
