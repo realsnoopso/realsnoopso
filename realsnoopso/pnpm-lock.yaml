@@ -50,6 +50,9 @@ dependencies:
   gatsby-react-router-scroll:
     specifier: ^6.9.0
     version: 6.9.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
+  gatsby-remark-autolink-headers:
+    specifier: ^6.12.0
+    version: 6.12.0(gatsby@5.9.0)(react-dom@18.2.0)(react@18.2.0)
   gatsby-remark-copy-linked-files:
     specifier: ^6.12.0
     version: 6.12.0(gatsby@5.9.0)
@@ -6019,6 +6022,24 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /gatsby-remark-autolink-headers@6.12.0(gatsby@5.9.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-c+zXq+frX7TCFoGPig4H4zn5RqsV2pduO/jF/NQLtnH2D5JnaDT0rPwiTzUi+9soyZpAenuV8Sprv6JFELPW+w==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      gatsby: ^5.0.0-next
+      react: ^18.0.0 || ^0.0.0
+      react-dom: ^18.0.0 || ^0.0.0
+    dependencies:
+      '@babel/runtime': 7.21.5
+      gatsby: 5.9.0(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+      github-slugger: 1.5.0
+      lodash: 4.17.21
+      mdast-util-to-string: 2.0.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      unist-util-visit: 2.0.3
     dev: false
 
   /gatsby-remark-copy-linked-files@6.12.0(gatsby@5.9.0):
