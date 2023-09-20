@@ -208,7 +208,7 @@ export const HomeList = ({ categoryIdx, userMainLocationIdx }) => {
 
 다음으로는 useInfiniteQuery의 parameter에 대해서 살펴보자.
 - queryName: 해당 쿼리의 이름을 설정할 수 있다. 
-- queryQuery: data.pages에 반환할 값을 결정하는 비동기 함수이다. 여기에서 원하는 API를 호출해주면 된다.
+- queryFn: data.pages에 반환할 값을 결정하는 비동기 함수이다. 여기에서 원하는 API를 호출해주면 된다.
 - options
 	- getNextPageParam: data.pageParams에 어떤 값을 넣어줄지 결정할 수 있는 함수이다.
 	-  select: queryQuery에서 반환된 값의 형식을 변경하고 싶을 때 사용하는 함수이다. 
