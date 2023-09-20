@@ -4,26 +4,25 @@ date: 2023-9-20T00:00:32.169Z
 description: useInfiniteQuery를 이용해 무한스크롤을 구현해보자.
 ---
 # 도입 계기
-기존에는 Custom Hook을 직접 만들어 fetch을 했지만, useEffect에서 fetch를 실행할 수 밖에 없다는 단점이 있었다.  React 공식 문서를 살펴보면 useEffect를 통한 fetch에는 몇가지 문제가 있다. Effect는 서버에서 실행되지 않는다. 
+기존에는 Custom Hook을 직접 만들어 fetch을 했지만, useEffect에서 fetch를 실행할 수 밖에 없다는 단점이 있었다.  React 공식 문서를 살펴보면 useEffect를 통한 fetch에는 Effect가 서버에서 실행되지 않아서 발생하는 문제점들이 존재한다.
 
 1. 데이터를 미리 로드할 수 없다.
 2. 캐시가 불가능하다.
 
- 따라서 위 두가지 큰 문제가 따라오며, 조건 경합과 같은 버그가 발생할 수 있다. React 공식 문서에서도 Fecth 관련 라이브러리를 따로 설치하여 이용할 것을 추천하고 있다.
+ 위와 같은 문제가 대표적이며, 조건 경합과 같은 버그가 발생할 수 있다. 때문에 React 공식 문서에서도 Fecth 관련 라이브러리를 따로 설치하여 이용할 것을 추천하고 있다.
 
-React에 언급된 대안은 다음과 같다. 
+공식 문서에 언급된 대안은 다음과 같다. 
 
 1. Framework(Next.js, Remix 등..)를 사용하는 경우 내장 fetching 매커니즘
 2. React Query
 3. useSWR
 4. React Router 6.4
 
-우선 현재의 프로젝트에서 Framework를 따로 사용하고 있지 않아 1번은 제외하였다. 그리고 React Router의 경우 캐시 기능을 지원하지 않아 제외했다. useSWR의 경우 가벼운 것이 장점이지만, Infinite Queries와 Devtools를 지원하지 않았다. 최종적으로 React Query를 도입하는 것으로 결정하였다.
+우선 현재의 프로젝트에서 Framework를 따로 사용하고 있지 않아 1번은 제외하였다. 그리고 React Router의 경우 캐시 기능을 지원하지 않아 제외했다. useSWR의 경우 가벼운 것이 장점이지만, Infinite Queries와 Devtools를 지원하지 않았다. 최종적으로 프로젝트에 React Query를 도입하는 것으로 결정하였다.
 
 # React Query 도입하기
 ## 1. 기본 설정
-React query를 사용하기 위해서는 queryClient를 provider에 넣어준 후 App 자체를 감싸주어야 한다. 이 때, Suspense를 이용할 예정이므로 option에 suspense를 true로 설정해주었다. 이 설정이 없으면 Suspense에서 React Query의 처리 상태를 캐치할 수 없다.
-추가로, devtools의 사용을 위해 ReactQueryDevtools을 코드에 심어 두었다.
+React query를 사용하기 위해서는 queryClient를 provider에 넣어준 후 App 자체를 감싸주어야 한다. 이 때, Suspense를 이용할 예정이므로 option에 suspense를 true로 설정해주었다. 이 설정이 없으면 Suspense에서 React Query의 처리 상태를 캐치할 수 없다. 추가로, devtools의 사용을 위해 ReactQueryDevtools을 코드에 심어 두었다.
 
 ```jsx
 export const App = () => {
@@ -202,19 +201,19 @@ export const HomeList = ({ categoryIdx, userMainLocationIdx }) => {
 
 이제 useInfiniteQuery의 각 property에 대해서 하나하나 알아보자.
 
-1. data: `{ pageParams, pages }` 와 같은 형태를 갖고 있으며, 이 pages라는 배열 안에 비동기 함수의 반환 값이 순차적으로 들어간다. 
-2. isFetchingNextPage: fetchNextPage 콜백이 실행되고 있는 중이라면 true 값을 반환한다. 
-3. fetchNextPage: 다음 페이지의 데이터를 가져오기 위한 비동기 함수이다.
-4. hasNextPage: 다음 페이지 존재 여부를 알려준다.
+- data: `{ pageParams, pages }` 와 같은 형태를 갖고 있으며, 이 pages라는 배열 안에 비동기 함수의 반환 값이 순차적으로 들어간다. 
+- isFetchingNextPage: fetchNextPage 콜백이 실행되고 있는 중이라면 true 값을 반환한다. 
+- fetchNextPage: 다음 페이지의 데이터를 가져오기 위한 비동기 함수이다.
+- hasNextPage: 다음 페이지 존재 여부를 알려준다.
 
 다음으로는 useInfiniteQuery의 parameter에 대해서 살펴보자.
-1. queryName: 해당 쿼리의 이름을 설정할 수 있다. 
-2. queryQuery: data.pages에 반환할 값을 결정하는 비동기 함수이다. 여기에서 원하는 API를 호출해주면 된다.
-3. options
-	1. getNextPageParam: data.pageParams에 어떤 값을 넣어줄지 결정할 수 있는 함수이다.
-	2. select: queryQuery에서 반환된 값의 형식을 변경하고 싶을 때 사용하는 함수이다. 
-	3. staleTime: stale의 반댓말은 freshness인데, 말 그대로 데이터의 신선도가 얼만큼 유지될지 결정하는 값이다. 예를 들어 staleTime이 3초로 설정되어 있으면, 이전까지는 캐시된 데이터를 가져다 쓰고 3초 후에 API를 다시 호출하는 식이다.
-	4. cacheTime: 얼만큼 오랫동안 캐시 메모리에 해당 캐시를 유지해놓을지 결정하는 값이다.
+- queryName: 해당 쿼리의 이름을 설정할 수 있다. 
+- queryQuery: data.pages에 반환할 값을 결정하는 비동기 함수이다. 여기에서 원하는 API를 호출해주면 된다.
+- options
+	- getNextPageParam: data.pageParams에 어떤 값을 넣어줄지 결정할 수 있는 함수이다.
+	-  select: queryQuery에서 반환된 값의 형식을 변경하고 싶을 때 사용하는 함수이다. 
+	- staleTime: stale의 반댓말은 freshness인데, 말 그대로 데이터의 신선도가 얼만큼 유지될지 결정하는 값이다. 예를 들어 staleTime이 3초로 설정되어 있으면, 이전까지는 캐시된 데이터를 가져다 쓰고 3초 후에 API를 다시 호출하는 식이다.
+	- cacheTime: 얼만큼 오랫동안 캐시 메모리에 해당 캐시를 유지해놓을지 결정하는 값이다.
 
 
 아래는 해당 코드를 적용한 화면이다. 홈 화면에서 빠져나와 다시 홈 화면을 켰을때, 처음에는 items 에 대한 GET 요청이 다시 발생하지 않았던 반면, staleTime 만큼 시간이 지나면 데이터가 stale 상태로 전환, API가 다시 호출되는 것을 확인할 수 있다.
@@ -222,7 +221,7 @@ export const HomeList = ({ categoryIdx, userMainLocationIdx }) => {
 ![Screen Recording 2023-09-20 at 6 56 10 PM](https://user-images.githubusercontent.com/96381221/269247522-dae0d9e6-b349-4be4-b067-5125cd498e6d.gif)
 
 # 결론
-React Query를 적용하여 무한스크롤을 개선해보았다. useInfiniteQuery 와 같은 훅도 매력적이었지만, 캐싱 기능이 정말 편리하고 강력하다고 느껴졌다. 또한 Suspense 와 ErrorBoundary의 사용으로 복잡한 예외처리가 사라져 코드의 가독성이 눈에 띄게 좋아졌다. 라이브러리의 사용을 최소화하는 프로젝트에서도 React Query의 사용은 고려해볼만 하다고 느껴진다.
+React Query를 적용하여 무한스크롤 코드를 개선해보았다. useInfiniteQuery 와 같은 훅도 매력적이었고, 특히 캐싱 기능이 정말 편리하고 강력하다고 느껴졌다. 라이브러리의 사용을 최소화하는 프로젝트일지라도 React Query의 사용은 적극적으로 고려해보게 될 것 같다.
 
 # 참고
 [https://github.dev/usmanabdurrehman/React-tutorials/blob/ReactQuerySuspense/src/App.tsx](https://github.dev/usmanabdurrehman/React-tutorials/blob/ReactQuerySuspense/src/App.tsx)
