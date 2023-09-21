@@ -6,6 +6,8 @@ description: 컴포넌트가 생성되고 사라질때 애니메이션 효과를
 # 배경
 우리 팀은 불필요한 element가 돔에 노출되지 않도록 Dynamic Portal을 구현하였다. Dynamic Portal이란 특정 Dialog가 필요한 순간에만 Dynamic하게 element를 돔에 올리는 것을 뜻한다. Dynamic Portal를 구현한 내용은 아래 링크에서 확인할 수 있다.
 
+[https://pocoding.tistory.com/117](https://pocoding.tistory.com/117)
+
 ![Screen Recording 2023-09-22 at 12 57 17 AM](https://user-images.githubusercontent.com/96381221/269682758-c5ff3e59-726c-481e-9012-35af0e66de60.gif)
 
 # 문제점
@@ -23,7 +25,7 @@ description: 컴포넌트가 생성되고 사라질때 애니메이션 효과를
 5. 해제 애니메이션 종료
 6. 컴포넌트 unmount
 
-![](./assets/Screenshot 2023-09-22 at 1.42.45 AM.png)
+![image](./assets/image01.png)
 
 그러면 명확해졌다. 이제 각 단계를 코드로 표현하는 일만이 남았다.
 
@@ -127,4 +129,5 @@ setBeforeUnmountFlag,
 # 결과물
 모달의 사용여부에 따라 동적으로 element가 나타났다가 다시 사라지는 것을 확인할 수 있다. 그러면서도 동시에 애니메이션은 여전히 적용된다.
 
-![[Screen Recording 2023-09-22 at 12.57.17 AM.gif]]
+![Screen Recording 2023-09-22 at 2 01 17 AM](https://user-images.githubusercontent.com/96381221/269701481-8c2b2d24-436e-45bd-9f62-ea343c01b4eb.gif)
+
