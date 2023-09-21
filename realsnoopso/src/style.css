@@ -344,6 +344,11 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+
+  .bio {
+    display: grid;
+    gap: var(--spacing-3);
+  }
 }
 
 .headline {

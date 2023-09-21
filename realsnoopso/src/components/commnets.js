@@ -10,8 +10,8 @@ const Comments = ({ pathname }) => {
   return (
     <div
       className="fb-comments"
-      data-href={`https://snoop.so${pathname}`} // 실제 웹 페이지 URL을 입력하세요.
-      data-width="100%"
+      data-href={`https://snoop.so${pathname}`}
+      data-width="100vw"
       data-numposts="5"
     ></div>
   )
