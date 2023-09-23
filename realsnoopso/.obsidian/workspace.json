@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "350a654f503f09b8",
+            "id": "0e7004176decfd7b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/blog/codesquadCS/index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/blog/codesquadCS/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "content/blog/codesquadCS/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,19 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "content/blog/codesquadCS/index.md"
+              }
+            }
+          },
+          {
+            "id": "2f13e10430d8b94c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ]
@@ -138,26 +156,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "350a654f503f09b8",
+  "active": "0e7004176decfd7b",
   "lastOpenFiles": [
+    "content/blog/secondHandRetro/index.md",
+    "content/blog/secondHandRetro/assets/images-01.png",
+    "content/blog/secondHandRetro/assets/images-02.png",
+    "content/blog/secondHandRetro/assets",
+    "content/blog/secondHandRetro/images-02.png",
+    "content/blog/secondHandRetro/images-01.png",
+    "images-01.png",
+    "images-02.png",
+    "images.png",
+    "Screenshot 2023-09-23 at 9.02.36 AM.png",
+    "Screenshot 2023-09-23 at 7.59.34 AM.png",
+    "content/blog/secondHandRetro/Untitled.md",
+    "content/blog/secondHandRetro",
     "public/static/e48b2a8c9549189c51cf4f52400c9978/78612/image01.png",
     "public/static/e48b2a8c9549189c51cf4f52400c9978/78612",
     "public/static/e48b2a8c9549189c51cf4f52400c9978",
-    "content/blog/dialogSlideAnimation/assets/image01.png",
-    "content/blog/dialogSlideAnimation/assets/image0`.png",
     "content/blog/dialogSlideAnimation/assets/index.md",
     "content/blog/dialogSlideAnimation/index.md",
-    "content/blog/dialogSlideAnimation/assets/Screenshot 2023-09-22 at 1.42.45 AM.png",
     "content/blog/dialogSlideAnimation/assets",
-    "content/blog/dialogSlideAnimation/Screenshot 2023-09-22 at 1.42.45 AM.png",
-    "content/blog/reactquery/Screenshot 2023-09-22 at 1.42.45 AM.png",
     "Untitled.canvas",
     "public/page-data/dialogSlideAnimation/page-data.json",
     "public/page-data/dialogSlideAnimation",
-    "Screen Recording 2023-09-22 at 12.57.17 AM.gif",
-    "Screenshot 2023-09-22 at 1.42.45 AM.png",
-    "Screenshot 2023-09-22 at 1.41.46 AM.png",
-    "Screenshot 2023-09-22 at 1.39.09 AM.png",
     "content/blog/durationPicker/index.md",
     "content/blog/reactquery/index.md",
     "content/blog/dialogSlideAnimation/Untitled.md",
@@ -168,9 +190,6 @@
     "content/blog/reactquery",
     "content/blog/aiImage/index.md",
     "public/page-data/번들러란/page-data.json",
-    "public/page-data/번들러란",
-    "public/page-data/\b코드스쿼드 CS과정 회고/page-data.json",
-    "public/static/e3dc0536961a2d1adab9acbc6f60ba81/8c76f/image01.png",
     "content/blog/Duration Picker를 사내 라이브러리로 배포하기/index.md",
     "content/blog/Duration Picker 사내 라이브러리로 배포하기/index.md",
     "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
