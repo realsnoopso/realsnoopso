@@ -1,6 +1,6 @@
 ---
 title: Second Hand 프로젝트 회고
-date: 2022-10-02T00:00:32.169Z
+date: 2023-09-24T00:00:32.169Z
 description: Svelte로 Dialog 만들기
 ---
 # 프로젝트 시작
