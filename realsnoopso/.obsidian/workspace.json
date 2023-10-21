@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/blog/codesquadCS/index.md",
+                "file": "content/blog/handleBeforeunloadOnElectron/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ca5b8640959a1724",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/blog/codesquadCS/index.md",
+                "file": "content/blog/handleBeforeunloadOnElectron/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/blog/codesquadCS/index.md",
+                "file": "content/blog/handleBeforeunloadOnElectron/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/blog/codesquadCS/index.md"
+                "file": "content/blog/handleBeforeunloadOnElectron/index.md"
               }
             }
           },
@@ -158,6 +159,12 @@
   },
   "active": "0e7004176decfd7b",
   "lastOpenFiles": [
+    "Screenshot 2023-10-21 at 1.33.53 PM.png",
+    "content/blog/handleBeforeunloadOnElectron/Untitled.md",
+    "content/blog/handleBeforeunloadOnElectron/index.md",
+    "content/blog/reactquery/index.md",
+    "content/blog/codesquadCS/index.md",
+    "content/blog/handleBeforeunloadOnElectron",
     "content/blog/secondHandRetro/index.md",
     "content/blog/secondHandRetro/assets/images-01.png",
     "content/blog/secondHandRetro/assets/images-02.png",
@@ -181,7 +188,6 @@
     "public/page-data/dialogSlideAnimation/page-data.json",
     "public/page-data/dialogSlideAnimation",
     "content/blog/durationPicker/index.md",
-    "content/blog/reactquery/index.md",
     "content/blog/dialogSlideAnimation/Untitled.md",
     "content/blog/dialogSlideAnimation",
     "content/blog/searchCache/index.md",
@@ -189,7 +195,6 @@
     "content/blog/Bundler/index.md",
     "content/blog/reactquery",
     "content/blog/aiImage/index.md",
-    "public/page-data/번들러란/page-data.json",
     "content/blog/Duration Picker를 사내 라이브러리로 배포하기/index.md",
     "content/blog/Duration Picker 사내 라이브러리로 배포하기/index.md",
     "content/blog/AI 이미지 에디터 렌더링 최적화하기/index.md",
