@@ -13,6 +13,7 @@
     "@gatsbyjs/reach-router": "^2.0.1",
     "deepmerge": "^4.3.1",
     "gatsby": "^5.13.0",
+    "gatsby-cli": "^5.13.0",
     "gatsby-core-utils": "^4.9.0",
     "gatsby-link": "^5.9.0",
     "gatsby-plugin-disqus": "^1.2.6",
