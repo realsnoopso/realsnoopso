@@ -8,7 +8,7 @@ description: Server Action을 이용해 캐시를 삭제 해보자
 
 <img src="https://gist.github.com/assets/96381221/1da6f867-f3f7-48af-ab5e-75445714b29f">
 
-위에서 볼 수 있듯이 새로고침을 실행하면 정상적으로 업데이트된 내용이 반영되는 것을 확인할 수 있다. 따라서 요청은 정상적으로 일어났고, 캐시가 삭제 되지 않아 발생한 문제로 추측 되었다.
+새로고침을 실행하면 정상적으로 업데이트된 내용이 반영되는 것을 확인할 수 있다. 따라서 요청은 정상적으로 일어났고, 캐시가 삭제 되지 않아 발생한 문제로 추측 되었다.
 
 
 # 현재 상황
@@ -131,6 +131,7 @@ router.push(
 자 그럼 결과는.. POST 요청을 실행하자 마자 데이터가 잘 업데이트가 되었다. 캐시 문제가 맞다는 것이 확실히 확인이 되었다. 하지만 깔끔한 해결책이 아님은 분명해 보인다. 사용자에게 노출되는 주소에서 불필요한 정보가 보이게 되니까 말이다.
 
 <img src="https://gist.github.com/assets/96381221/6c16b659-c059-4d3a-985e-b4e05b0fb00c" alt="updatedAt 이 주소에 노출된다">
+
 ## RevalidatePath?
 나는 Next.js learn을 읽어보며 revalidatePath 를 이용하여 원하는 시점에 해당 주소의 캐시를 삭제할 수 있다는 사실을 알게 되었다. RevalidatePath 사용법은 다음과 같다.
 
@@ -143,13 +144,13 @@ revalidatePath('/blog/post-1')
 여기에서 문제는, revalidatePath는 서버에서만 실행 가능하다는 것이다. 하지만 현재 내가 POST 요청을 실행하는 곳은 클라이언트이기 때문에 프로필 페이지로 이동하기 전 서버를 한번 거쳐갈 필요가 있었다.
 
 ## 서버에서 RevalidatePath 실행하기
-이 부분에서 막혀있다가, 멘토이신 서진님과 함께 디버깅을 시작했다. 그러다가 `next.js server fetch cache purge` 라는 키워드로 검색을 했고, 검색 결과 바로 아래 Next.js 공식 문서로 연결되었다. (`purge`라는 단어가 생소했는데, 캐시를 삭제한다는 표현을 영어로 `purge cached data`로 표현한다는 것을 알게 되었다)
+이 부분에서 막혀있다가, 멘토이신 서진님과 함께 디버깅을 시작했다. `next.js server fetch cache purge` 라는 키워드로 검색을 했고, 검색 결과 바로 아래 Next.js 공식 문서로 연결되었다. (`purge`라는 단어가 생소했는데, 캐시를 삭제한다는 표현을 영어로 `purge cached data`로 표현한다는 것을 알게 되었다)
 
 https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations#convention
 
 위 문서에서 Server Action 혹은 Route Handler 안에서 revalidatePath 혹은 revalidateTag 메소드를 사용함으로써 원하는 시점에 캐시를 삭제할 수 있다는 것을 확인할 수 있었다.
 
-그럼 Server Action과 Route Handler두가지 선택지 중 어떤 것을 선택하는 것이 좋을까? Server Action은 비동기 함수를 실행하는 것이고, Route Handler는 따로 네트워크 요청이 발생하기 때문에 성능상 Server Action을 사용하는 편이 더 좋을 것이라 판단했다. 
+그럼 Server Action과 Route Handler 두가지 선택지 중 어떤 것을 선택하는 것이 좋을까? Server Action은 비동기 함수를 실행하는 것이고, Route Handler는 따로 네트워크 요청이 발생하기 때문에 성능상 Server Action을 사용하는 편이 더 좋을 것이라 판단했다. 
 
 그럼 Server Action에서 RevalidatePath를 사용해 보자. 우선 Next.js 13 버전을 사용하고 있으므로, Server Action 을 사용하기 위해 설정 값을 추가해준다.
 
