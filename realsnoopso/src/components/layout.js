@@ -31,13 +31,13 @@ const Layout = ({ location, title, children }) => {
         >
           github
         </Link>
-        <Link
+        {/* <Link
           className="header-link-home"
           to="https://drive.google.com/file/d/1az8bZSsq2-I6KSY3LPVwiA2Rm9yTREGe/view?usp=sharing"
           target="_blank"
         >
           resume
-        </Link>
+        </Link> */}
       </div>
     </div>
   )
