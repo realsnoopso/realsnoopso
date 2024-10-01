@@ -266,7 +266,7 @@ a:focus {
 }
 
 .post-list-item {
-  margin-bottom: var(--spacing-12);
+  margin-bottom: var(--spacing-10);
 }
 
 .post-list-item p {

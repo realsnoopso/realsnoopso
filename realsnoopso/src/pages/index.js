@@ -45,13 +45,13 @@ const BlogIndex = ({ data, location }) => {
                 <small style={{ color: "var(--color-text-light)" }}>
                   {post.frontmatter.date}
                 </small>
-                <p
+                {/* <p
                   style={{ marginTop: "var(--spacing-1)" }}
                   dangerouslySetInnerHTML={{
                     __html: post.frontmatter.description || post.excerpt,
                   }}
                   itemProp="description"
-                />
+                /> */}
               </article>
             </li>
           )
